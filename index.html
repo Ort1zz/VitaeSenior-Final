@@ -146,10 +146,10 @@
 
         @media (max-width: 768px) {
             .whatsapp-float {
-                height: 50px;
+                width: 55px;
+                height: 55px;
                 bottom: 20px;
                 right: 20px;
-                font-size: 24px;
             }
         }
 
@@ -196,11 +196,11 @@
     <div class="container mx-auto">
         <div class="flex flex-col text-center md:text-left px-6 py-20 md:py-0 md:px-12">
             <div class="anim-fade-in-blur mb-8">
-                <div>
-                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4 brand-primary">Cuidado que traz tranquilidade para a sua família.</h1>
+                <div class="md:pr-8">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4 brand-primary">Cuidado que traz tranquilidade para a sua família.</h1>
                 </div>
-                <div>
-                    <p class="text-base md:text-xl mb-6 max-w-2xl mx-auto md:mx-0">Oferecemos um atendimento humanizado em domicílio, que respeita a história e a autonomia de quem você ama, para que você tenha a segurança e a paz de espírito que precisa.</p>
+                <div class="md:pr-8">
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto md:mx-0">Oferecemos um atendimento humanizado em domicílio, que respeita a história e a autonomia de quem você ama, para que você tenha a segurança e a paz de espírito que precisa.</p>
                 </div>
             </div>
             
@@ -246,11 +246,11 @@
         <!-- SEÇÃO 2: QUEM SOMOS -->
         <section id="quem-somos" class="pt-24 pb-20 bg-white min-h-screen overflow-hidden">
             <div class="container mx-auto px-6 text-center">
-                <div class="scroll-trigger" data-animation="anim-slide-down">
-                    <h2 class="text-3xl md:text-5xl font-semibold brand-primary mb-6">Mais que um serviço, uma relação de confiança.</h2>
+                <div class="scroll-trigger" data-animation="anim-slide-down-fast">
+                    <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-6">Mais que um serviço, uma relação de confiança.</h2>
                 </div>
-                <div class="scroll-trigger" data-animation="anim-fade-in-blur" data-delay="0.3s">
-                    <p class="max-w-5xl mx-auto text-base md:text-lg mb-12">A Vitae Sênior nasceu do nosso desejo de oferecer um cuidado que vai além: com empatia, ética e um foco genuíno na qualidade de vida. Entendemos este momento delicado e estamos aqui para oferecer o melhor suporte para o idoso e toda a família.</p>
+                <div class="scroll-trigger" data-animation="anim-fade-in-blur-fast" data-delay="0.3s">
+                    <p class="max-w-3xl mx-auto text-base md:text-lg mb-12">A Vitae Sênior nasceu do nosso desejo de oferecer um cuidado que vai além: com empatia, ética e um foco genuíno na qualidade de vida. Entendemos este momento delicado e estamos aqui para oferecer o melhor suporte para o idoso e toda a família.</p>
                 </div>
                 <!-- CARROSSEL DE IMAGENS -->
                 <div class="max-w-8xl mx-auto rounded-lg shadow-xl overflow-hidden h-[300px] md:h-[600px] scroll-trigger" data-animation="anim-scale-up" data-delay="0.5s">
@@ -279,7 +279,7 @@
              <!-- Coluna da Esquerda: Conteúdo Interativo -->
             <div class="flex flex-col justify-center items-center px-6 py-20 md:px-12">
                 <div class="w-full max-w-xl text-center">
-                    <div class="scroll-trigger" data-animation="anim-slide-down-fast">
+                    <div class="scroll-trigger" data-animation="anim-slide-down-fast" data-delay="0.1s">
                         <h3 class="text-3xl md:text-4xl font-semibold brand-primary mb-8 md:mb-12">Nosso Processo de Cuidado</h3>
                     </div>
                     <div class="grid grid-cols-2 gap-4 md:gap-6">
@@ -324,11 +324,11 @@
         <section id="servicos" class="bg-white py-20 min-h-screen flex flex-col justify-center overflow-hidden">
             <div class="container mx-auto px-6 text-center">
                  <div class="scroll-trigger" data-animation="anim-slide-down-fast">
-                    <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-4">Soluções completas para cada necessidade.</h2>
+                    <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-4">Nossas soluções de cuidado</h2>
                 </div>
                 <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 md:mb-12 scroll-trigger" data-animation="anim-fade-in-blur-fast" data-delay="0.2s">Do acompanhamento diário ao suporte especializado, temos o serviço ideal para garantir o bem-estar e a segurança do seu familiar.</p>
             </div>
-            <div class="container mx-auto px-6 flex-grow flex flex-col md:flex-row gap-8">
+            <div class="container mx-auto px-4 md:px-6 flex-grow flex flex-col md:flex-row gap-6 md:gap-8">
                 <!-- Card de Navegação (Esquerda) -->
                 <div class="flex-shrink-0 md:w-1/4 brand-accent rounded-lg shadow-lg p-3 md:p-4 flex flex-col justify-center scroll-trigger" data-animation="anim-slide-in-left-fast" data-delay="0.4s">
                     <button data-tab="tab-1" class="service-tab-button active-tab text-left w-full p-3 md:p-4 rounded-lg transition-colors duration-200 text-gray-200 text-sm md:text-base">Cuidado Domiciliar</button>
@@ -346,7 +346,7 @@
                     <div id="tab-1" class="service-tab-content">
                         <img src="img/Cuidado Domiciliar.png" alt="Imagem do serviço Cuidado Domiciliar" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                            <h3 class="text-2xl md:text-3xl font-semibold text-white">Cuidado Domiciliar</h3>
+                            <h3 class="text-xl md:text-3xl font-semibold text-white">Cuidado Domiciliar</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">Nosso serviço de Cuidado Domiciliar permite que seu familiar permaneça no conforto e segurança do seu próprio lar, mantendo a qualidade de vida. Oferecemos acompanhamento flexível, seja por turnos ou integral 24 horas, adaptado à rotina da sua família.
 
 A assistência inclui suporte completo nas atividades diárias, como locomoção e vestimenta, além de cuidados de higiene pessoal realizados com total discrição, respeito e dignidade. Nossos profissionais também se encarregam do preparo de refeições nutritivas e saborosas, seguindo qualquer orientação dietética. Acima de tudo, garantimos uma companhia dedicada, oferecendo o carinho e a atenção que seu familiar merece.</p>
@@ -357,7 +357,7 @@ A assistência inclui suporte completo nas atividades diárias, como locomoção
                     <div id="tab-2" class="service-tab-content hidden">
                         <img src="img/acompanhamento hospitalar.png" alt="Imagem do serviço Acompanhamento Hospitalar" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                            <h3 class="text-2xl md:text-3xl font-semibold text-white">Acompanhamento Hospitalar</h3>
+                            <h3 class="text-xl md:text-3xl font-semibold text-white">Acompanhamento Hospitalar</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">Um período de internação pode ser um momento desgastante e solitário. Nosso serviço de Acompanhamento Hospitalar foi criado para levar tranquilidade e suporte diretamente ao ambiente hospitalar. Disponibilizamos um profissional dedicado para oferecer companhia e assistência contínua ao paciente, garantindo que ele tenha mais conforto e nunca se sinta desamparado.
 
 Essa presença constante reforça a segurança, proporcionando uma vigilância atenta e auxílio imediato quando necessário. Além disso, atuamos como um elo de confiança, facilitando uma comunicação clara e constante entre a equipe médica e a família, mantendo todos informados e alinhados durante todo o período de internação.</p>
@@ -368,7 +368,7 @@ Essa presença constante reforça a segurança, proporcionando uma vigilância a
                     <div id="tab-3" class="service-tab-content hidden">
                         <img src="img/acompanhamento a consultas.png" alt="Imagem do serviço Acompanhamento a Consultas" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                            <h3 class="text-2xl md:text-3xl font-semibold text-white">Acompanhamento a Consultas e Exames</h3>
+                            <h3 class="text-xl md:text-3xl font-semibold text-white">Acompanhamento a Consultas e Exames</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">Sabemos que a logística para consultas médicas e exames pode ser um desafio. Por isso, estendemos nosso cuidado para além das internações, oferecendo um acompanhamento profissional dedicado a esses compromissos. Nossa equipe assegura que o idoso tenha suporte completo em todos os momentos fora de casa, desde o transporte seguro até a assistência durante o procedimento ou consulta.
 
 Este serviço garante não apenas a segurança e o auxílio na locomoção, mas também uma companhia qualificada durante a espera e o suporte para que todas as informações médicas sejam bem compreendidas. Para a família, é a tranquilidade de saber que os compromissos de saúde serão cumpridos com pontualidade e com o máximo de cuidado e atenção.</p>
@@ -379,7 +379,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
                     <div id="tab-4" class="service-tab-content hidden">
                         <img src="img/administração de remedios.png" alt="Imagem do serviço Administração de Medicamentos" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                             <h3 class="text-2xl md:text-3xl font-semibold text-white">Administração de Medicamentos</h3>
+                             <h3 class="text-xl md:text-3xl font-semibold text-white">Administração de Medicamentos</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">A eficácia do tratamento médico depende da gestão precisa da medicação. Nosso serviço assume essa responsabilidade crucial, cuidando da organização completa e da administração segura de cada dose, respeitando rigorosamente os horários corretos prescritos. Sabemos que esta rotina é vital para a saúde do paciente. Para garantir a transparência total, mantemos registros detalhados de cada administração, oferecendo um controle claro para a família e fornecendo informações precisas para o acompanhamento dos médicos.</p>
                             <a href="https://wa.me/15988082191?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Administração%20de%20Medicamentos." target="_blank" class="mt-6 inline-block bg-white text-brand-primary font-bold py-3 px-6 rounded-md transition-transform hover:scale-105 shadow-md">Solicitar Orçamento</a>
                         </div>
@@ -388,7 +388,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
                     <div id="tab-5" class="service-tab-content hidden">
                         <img src="img/apoio a mobilidade.png" alt="Imagem do serviço Apoio na Mobilidade" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                            <h3 class="text-2xl md:text-3xl font-semibold text-white">Apoio na Mobilidade</h3>
+                            <h3 class="text-xl md:text-3xl font-semibold text-white">Apoio na Mobilidade</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">Manter-se ativo é fundamental para a saúde e a independência. Nossos profissionais oferecem um auxílio especializado focado na mobilidade segura, seja em deslocamentos pela casa, em caminhadas assistidas ou na realização de exercícios leves recomendados. Entendemos os riscos associados à locomoção na terceira idade, por isso nosso foco é total na prevenção de quedas, utilizando as técnicas corretas de apoio. Mais do que apenas ajudar a mover-se, nosso objetivo é estimular a confiança e a independência do idoso, incentivando-o a manter uma rotina ativa com segurança.</p>
                             <a href="https://wa.me/15988082191?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Apoio%20na%20Mobilidade." target="_blank" class="mt-6 inline-block bg-white text-brand-primary font-bold py-3 px-6 rounded-md transition-transform hover:scale-105 shadow-md">Solicitar Orçamento</a>
                         </div>
@@ -397,7 +397,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
                     <div id="tab-6" class="service-tab-content hidden">
                         <img src="img/atividades de estimulos.png" alt="Imagem do serviço Atividades de Estímulo" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                            <h3 class="text-2xl md:text-3xl font-semibold text-white">Atividades de Estímulo</h3>
+                            <h3 class="text-xl md:text-3xl font-semibold text-white">Atividades de Estímulo</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">O cuidado com a saúde mental e social é tão importante quanto o cuidado físico. Por isso, promovemos ativamente o bem-estar cognitivo e emocional através de atividades de estímulo personalizadas. Nossos profissionais engajam o idoso em rotinas que mantêm a mente ativa, como jogos de memória, leitura compartilhada, e conversas significativas sobre seus interesses. Quando apropriado e seguro, também incentivamos passeios leves. O objetivo é criar um ambiente dinâmico e alegre, combatendo a apatia e garantindo que o idoso se sinta mentalmente engajado e socialmente conectado.</p>
                             <a href="https://wa.me/15988082191?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Atividades%20de%20Estímulo." target="_blank" class="mt-6 inline-block bg-white text-brand-primary font-bold py-3 px-6 rounded-md transition-transform hover:scale-105 shadow-md">Solicitar Orçamento</a>
                         </div>
@@ -406,7 +406,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
                     <div id="tab-7" class="service-tab-content hidden">
                         <img src="img/Planos personalizados.png" alt="Imagem do serviço Planos Personalizados" class="w-full h-48 md:h-64 object-cover">
                         <div class="p-6 md:p-8">
-                            <h3 class="text-2xl md:text-3xl font-semibold text-white">Planos Personalizados</h3>
+                            <h3 class="text-xl md:text-3xl font-semibold text-white">Planos Personalizados</h3>
                             <p class="mt-2 text-sm md:text-base text-gray-200">Entendemos que não existem duas famílias ou duas necessidades iguais. Por isso, nosso processo sempre se inicia com uma avaliação detalhada e atenciosa, onde ouvimos suas preocupações para entender profundamente o cenário. Com base nesse diagnóstico, criamos um plano de cuidado totalmente sob medida. Este plano é desenhado para se encaixar perfeitamente não apenas nas necessidades de saúde do assistido, mas também na rotina e na dinâmica da sua família, garantindo um atendimento flexível, eficaz e harmonioso.</p>
                             <a href="https://wa.me/15988082191?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Planos%20Personalizados." target="_blank" class="mt-6 inline-block bg-white text-brand-primary font-bold py-3 px-6 rounded-md transition-transform hover:scale-105 shadow-md">Solicitar Orçamento</a>
                         </div>
@@ -419,11 +419,11 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
         <section id="diferenciais" class="brand-bg-light min-h-screen overflow-hidden py-24">
             <div class="container mx-auto px-6">
                 <!-- Div do Título -->
-                <div class="text-center">
-                    <div class="scroll-trigger" data-animation="anim-slide-down">
+                <div class="text-center mb-12">
+                    <div class="scroll-trigger" data-animation="anim-slide-down-fast">
                         <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-4">Por que a Vitae Sênior é a escolha certa?</h2>
                     </div>
-                    <div class="scroll-trigger" data-animation="anim-slide-down" data-delay="0.3s">
+                    <div class="scroll-trigger" data-animation="anim-fade-in-blur-fast" data-delay="0.3s">
                         <p class="max-w-3xl mx-auto text-base md:text-lg">Nosso compromisso vai além do básico. Veja o que nos torna diferentes:</p>
                     </div>
                 </div>
@@ -431,7 +431,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
                 <!-- Div do Conteúdo Principal -->
                 <div class="mt-16 md:mt-32">
                     <div class="grid md:grid-cols-3 gap-8 md:gap-16 items-center max-w-7xl mx-auto">
-                        <!-- Coluna da Esquerda -->
+                        <!-- Coluna da Esquerda (visível em mobile também) -->
                         <div class="space-y-12 md:space-y-20 scroll-trigger" data-animation="anim-slide-in-left" data-delay="0.6s">
                             <!-- Diferencial 1 -->
                             <div class="text-center md:text-right">
@@ -451,7 +451,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
                             </div>
                         </div>
 
-                        <!-- Coluna Central com Imagem -->
+                        <!-- Coluna Central com Imagem (escondida em mobile) -->
                         <div class="hidden md:block px-4 scroll-trigger" data-animation="anim-scale-up" data-delay="0.4s">
                             <img src="img/escolher.png" alt="Cuidadora e idosa sorrindo juntas" class="rounded-3xl shadow-xl mx-auto">
                         </div>
@@ -484,11 +484,11 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
 <section id="profissionais" class="py-20 min-h-screen bg-white overflow-hidden">
     <div class="container mx-auto px-6">
         <!-- Título e parágrafo no topo -->
-        <div class="text-center mb-16 md:mb-40">
-            <div class="scroll-trigger" data-animation="anim-slide-down">
+        <div class="text-center mb-16">
+            <div class="scroll-trigger" data-animation="anim-slide-down-fast">
                 <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-4">As pessoas por trás do nosso cuidado.</h2>
             </div>
-            <div class="scroll-trigger" data-animation="anim-fade-in-blur" data-delay="0.3s">
+            <div class="scroll-trigger" data-animation="anim-fade-in-blur-fast" data-delay="0.3s">
                 <p class="max-w-3xl mx-auto text-base md:text-lg">Nossa equipe é formada por profissionais qualificados e, acima de tudo, apaixonados pelo que fazem. Conheça alguns deles:</p>
             </div>
         </div>
@@ -515,10 +515,10 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
         <!-- SEÇÃO 6: FALE CONOSCO E TRABALHE CONOSCO -->
 <section id="contato" class="brand-accent py-20 md:py-32 min-h-screen overflow-hidden flex items-center justify-center">
     <div class="container mx-auto px-6">
-         <div class="grid md:grid-cols-2 gap-8 md:gap-12 w-full max-w-7xl mx-auto">
+         <div class="grid md:grid-cols-2 gap-12 md:gap-12 w-full max-w-7xl mx-auto">
             <!-- TRABALHE CONOSCO CARD -->
             <div id="trabalhe-conosco" class="bg-white p-8 md:p-12 rounded-lg shadow-xl scroll-trigger" data-animation="anim-fade-in-up" data-delay="0.4s">
-                <h2 class="text-2xl md:text-3xl font-semibold brand-primary mb-4">Faça parte da nossa família de cuidadores.</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold brand-primary mb-4">Faça parte da nossa equipe.</h2>
                 <p class="mb-6 md:mb-8 text-gray-600 text-base md:text-lg">Se você é apaixonado pelo cuidado humanizado e se identifica com nossos valores, queremos conhecer você.</p>
                 <form id="form-trabalhe-conosco" class="space-y-6">
                     <input id="trabalhe-nome" type="text" placeholder="Nome" class="w-full p-4 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 text-gray-800 text-base" required>
@@ -551,7 +551,7 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
     <!-- RODAPÉ -->
     <footer class="brand-bg-dark text-white">
         <div class="container mx-auto px-6 py-10">
-            <div class="grid md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
                 <div>
                     <h3 class="font-semibold text-lg mb-3">Endereço e Horários</h3>
                     <ul class="text-gray-300 text-sm space-y-1">
@@ -727,6 +727,37 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
             const texto = `Olá! Meu nome é *${nome}*.\nTelefone: *${telefone}*.\n\n*Mensagem:*\n${mensagem}`;
             const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
+            window.open(url, '_blank');
+        });
+
+        // Formulário Trabalhe Conosco
+        document.getElementById('form-trabalhe-conosco').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('trabalhe-nome').value;
+            const email = document.getElementById('trabalhe-email').value;
+            const telefone = document.getElementById('trabalhe-telefone').value;
+            const curriculoInput = document.getElementById('trabalhe-curriculo');
+            
+            let texto = `Olá! Gostaria de me candidatar a uma vaga.\n\n`;
+            texto += `*Nome:* ${nome}\n`;
+            texto += `*E-mail:* ${email}\n`;
+            texto += `*Telefone:* ${telefone}\n\n`;
+
+            if (curriculoInput.files.length > 0) {
+                texto += `Estou com meu currículo pronto para anexar aqui na conversa.`;
+            } else {
+                texto += `Não anexei um currículo, mas gostaria de saber mais sobre as vagas.`;
+            }
+
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+            window.open(url, '_blank');
+        });
+
+    </script>
+</body>
+</html>
             window.open(url, '_blank');
         });
 
