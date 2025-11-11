@@ -478,30 +478,26 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
 
         <!-- SEÇÃO 5: PROFISSIONAIS -->
 <section id="profissionais" class="py-20 min-h-screen bg-white overflow-hidden">
-    <div class="container mx-auto px-6">
-        <!-- Título e parágrafo no topo -->
-        <div class="text-center mb-16">
-            <div class="scroll-trigger" data-animation="anim-slide-down-fast">
-                <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-4">As pessoas por trás do nosso cuidado.</h2>
-            </div>
-            <div class="scroll-trigger" data-animation="anim-fade-in-blur-fast" data-delay="0.3s">
-                <p class="max-w-3xl mx-auto text-base md:text-lg">Nossa equipe é formada por profissionais qualificados e, acima de tudo, apaixonados pelo que fazem. Conheça alguns deles:</p>
-            </div>
+    <div class="container mx-auto px-6 text-center">
+        <!-- Título e parágrafo -->
+        <div class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-semibold brand-primary mb-4">As pessoas por trás do nosso cuidado.</h2>
+            <p class="max-w-3xl mx-auto text-base md:text-lg">Nossa equipe é formada por profissionais qualificados e, acima de tudo, apaixonados pelo que fazem. Conheça alguns deles:</p>
         </div>
 
-        <!-- Cards dos profissionais centralizados e maiores -->
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto items-center justify-center">
-            <div class="text-center scroll-trigger" data-animation="anim-fade-in-up" data-delay="0.5s">
-                <img class="w-48 h-64 md:w-64 md:h-80 rounded-lg mx-auto mb-4 md:mb-6 object-cover shadow-lg" src="img/Angela.png" alt="Angela">
+        <!-- Cards dos profissionais com fotos redondas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+            <!-- Card Angela -->
+            <div class="text-center p-6">
+                <img data-modal-target="#modal-angela" class="modal-trigger w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto mb-6 object-cover shadow-lg border-4 border-[#68937d] cursor-pointer hover:scale-105 transition-transform duration-300" src="img/Angela.png" alt="Foto de Angela Lucena">
                 <h3 class="text-xl md:text-2xl font-semibold brand-primary mb-2">Angela Lucena</h3>
-                <p class="font-semibold text-gray-500 mb-2 md:mb-3 text-sm md:text-base">proprietária e cuidadora</p>
-                <p class="text-sm md:text-base px-2">"minha missão é garantir que cada plano de cuidado seja perfeito para a família."</p>
+                <p class="font-semibold text-gray-500 text-base">Proprietária e Cuidadora</p>
             </div>
-            <div class="text-center scroll-trigger" data-animation="anim-fade-in-up" data-delay="0.7s">
-                <img class="w-48 h-64 md:w-64 md:h-80 rounded-lg mx-auto mb-4 md:mb-6 object-cover shadow-lg" src="img/monica.png" alt="monica">
+            <!-- Card Monica -->
+            <div class="text-center p-6">
+                <img data-modal-target="#modal-monica" class="modal-trigger w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto mb-6 object-cover shadow-lg border-4 border-[#68937d] cursor-pointer hover:scale-105 transition-transform duration-300" src="img/Monica.jpeg" alt="Foto de Monica Barycza">
                 <h3 class="text-xl md:text-2xl font-semibold brand-primary mb-2">Monica Barycza</h3>
-                <p class="font-semibold text-gray-500 mb-2 md:mb-3 text-sm md:text-base">proprietária e cuidadora</p>
-                <p class="text-sm md:text-base px-2">"Sou especialista em mobilidade e adoro ajudar nossos idosos a se sentirem mais seguros e independentes no dia a dia."</p>
+                <p class="font-semibold text-gray-500 text-base">Proprietária e Cuidadora</p>
             </div>
         </div>
     </div>
@@ -587,6 +583,45 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
     <a href="https://wa.me/15988082191" target="_blank" class="whatsapp-float" aria-label="Fale Conosco pelo WhatsApp">
         <img src="img/whatsapp.png" alt="WhatsApp" class="w-8 h-8">
     </a>
+
+    <!-- Estrutura dos Modais (escondidos por padrão) -->
+    <!-- Modal Angela -->
+    <div id="modal-angela" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-5xl p-8 md:p-12 relative">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-black text-3xl font-bold">&times;</button>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <!-- Foto Card (Esquerda) -->
+                <div class="flex-shrink-0 text-center">
+                    <img class="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-[#68937d] mx-auto" src="img/Angela.png" alt="Foto de Angela Lucena">
+                </div>
+                <!-- Conteúdo (Direita) -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-bold font-sans brand-secondary mb-2">Angela Lucena</h2>
+                    <p class="font-semibold text-gray-500 mb-4 text-xl">Proprietária e Cuidadora</p>
+                    <p class="text-gray-700 text-lg leading-relaxed">"Minha missão é garantir que cada plano de cuidado seja perfeito para a família."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Monica -->
+    <div id="modal-monica" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-5xl p-8 md:p-12 relative">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-black text-3xl font-bold">&times;</button>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <!-- Foto Card (Esquerda) -->
+                <div class="flex-shrink-0 text-center">
+                    <img class="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-[#68937d] mx-auto" src="img/Monica.jpeg" alt="Foto de Monica Barycza">
+                </div>
+                <!-- Conteúdo (Direita) -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-bold font-sans brand-secondary mb-2">Monica Barycza</h2>
+                    <p class="font-semibold text-gray-500 mb-4 text-xl">Proprietária e Cuidadora</p>
+                    <p class="text-gray-700 text-lg leading-relaxed">"Mônica Barycza, sócia e fundadora do Vitaesenior, atua como Professora do Estado de São Paulo há 15 anos, sendo concursada e, há 4 anos, ocupando o cargo de Coordenação Pedagógica Geral, vinculada à Diretoria de Ensino de Sorocaba. Possui formação em Estudos Sociais, Licenciatura em Geografia e História, além de Pedagogia, com pós-graduação em Meio Ambiente e Neuropsicopedagogia. Ao longo de sua trajetória, dedicou-se também ao trabalho voluntário com crianças em situação de vulnerabilidade por meio do esporte, na cidade de Osasco, contribuindo para o desenvolvimento social e educacional desses jovens."</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Mobile Menu
@@ -749,6 +784,39 @@ Este serviço garante não apenas a segurança e o auxílio na locomoção, mas 
             window.open(url, '_blank');
         });
 
+        // Lógica do Modal
+        const modalTriggers = document.querySelectorAll('.modal-trigger');
+        const modals = document.querySelectorAll('.modal');
+        const modalCloses = document.querySelectorAll('.modal-close');
+
+        modalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const targetModal = document.querySelector(trigger.dataset.modalTarget);
+                if (targetModal) {
+                    targetModal.classList.remove('hidden');
+                    targetModal.classList.add('flex'); // Usamos flex para centralizar
+                }
+            });
+        });
+
+        function closeModal(modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        modalCloses.forEach(button => {
+            button.addEventListener('click', () => {
+                closeModal(button.closest('.modal'));
+            });
+        });
+
+        modals.forEach(modal => {
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) { // Fecha se clicar no fundo
+                    closeModal(modal);
+                }
+            });
+        });
     </script>
 </body>
 </html>
